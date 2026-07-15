@@ -19,11 +19,38 @@ L'objectif principal est de concevoir et réaliser une **station de capteurs con
 - **Transmission sécurisée et légère** : Envoi des relevés télémétriques vers un broker via le protocole MQTT.
 - **Stockage et API** : Backend robuste enregistrant les historiques dans une base de données relationnelle et les rendant accessibles via une API REST sécurisée.
 - **Tableau de bord (Dashboard)** : Interface utilisateur moderne et réactive permettant la visualisation des données sous forme de graphiques en temps réel.
+- **Intelligence Artificielle** : Intégration d'algorithmes d'IA pour analyser les données environnementales et optimiser les prises de décision agricoles.
 
 ### Les technologies utilisées
 - **IoT & Firmware** : C/C++ (Environnement Arduino/ESP32), Simulateur Wokwi.
 - **Backend** : Node.js, Express.js, SQLite, JsonWebToken, MQTT (mqtt.js).
 - **Frontend** : React.js, Vite, Tailwind CSS, Recharts, Lucide React.
+
+---
+
+## 📸 Aperçu de l'Interface
+
+**1. Page de Connexion & Inscription**
+<p align="center">
+  <img src="./photos/Capture d'écran 2026-07-15 110849.png" alt="Login" width="48%">
+  <img src="./photos/Capture d'écran 2026-07-15 110924.png" alt="Signup" width="48%">
+</p>
+
+**2. Tableau de Bord (Dashboard)**
+*Visualisation en temps réel des données des capteurs (climat, humidité, luminosité, CO2).*
+<p align="center">
+  <img src="./photos/Capture d'écran 2026-07-15 103441.png" alt="Dashboard Haut" width="100%">
+  <br>
+  <img src="./photos/Capture d'écran 2026-07-15 103523.png" alt="Dashboard Bas" width="100%">
+</p>
+
+**3. Intelligence Artificielle & Communauté**
+*Retours des agriculteurs voisins et diagnostics agronomiques générés par l'IA.*
+<p align="center">
+  <img src="./photos/Capture d'écran 2026-07-15 103604.png" alt="Communauté" width="100%">
+  <br>
+  <img src="./photos/Capture d'écran 2026-07-15 103626.png" alt="Suggestions IA" width="100%">
+</p>
 
 ---
 
@@ -120,5 +147,5 @@ npm run dev
 ### 3. Lancer la simulation IoT (Firmware)
 Le firmware peut être simulé en utilisant Wokwi (ou flashé sur un vrai ESP32/Arduino). Les fichiers `.chip.c` et `diagram.json` définissent l'environnement matériel virtuel.
 
----
-*Fait avec ❤️ lors du stage d'été chez **Avicenne Consulting**.*
+> **Lien de la simulation interactive :** [Voir le projet Wokwi (Simulation)](https://wokwi.com/projects/467797481012494337)
+
