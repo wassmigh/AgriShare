@@ -41,7 +41,7 @@ L'objectif principal est de concevoir et réaliser une **station de capteurs con
 <p align="center">
   <img src="./photos/Capture d'écran 2026-07-15 103441.png" alt="Dashboard Haut" width="100%">
   <br>
-  <img src="./photos/Capture d'écran 2026-07-15 103523.png" alt="Dashboard Bas" width="100%">
+  <img src="./photos/Capture d'écran 2026-07-15 111804.png" alt="Dashboard Bas" width="100%">
 </p>
 
 **3. Intelligence Artificielle & Communauté**
