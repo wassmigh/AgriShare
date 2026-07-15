@@ -32,7 +32,7 @@ L'objectif principal est de concevoir et réaliser une **station de capteurs con
 
 **1. Page de Connexion & Inscription**
 <p align="center">
-  <img src="./photos/Capture d'écran 2026-07-15 112007" alt="Login" width="48%">
+  <img src="./photos/Capture d'écran 2026-07-15 112007.png" alt="Login" width="48%">
   <img src="./photos/Capture d'écran 2026-07-15 112011.png" alt="Signup" width="48%">
 </p>
 
