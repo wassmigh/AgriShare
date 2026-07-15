@@ -19,12 +19,13 @@ L'objectif principal est de concevoir et réaliser une **station de capteurs con
 - **Transmission sécurisée et légère** : Envoi des relevés télémétriques vers un broker via le protocole MQTT.
 - **Stockage et API** : Backend robuste enregistrant les historiques dans une base de données relationnelle et les rendant accessibles via une API REST sécurisée.
 - **Tableau de bord (Dashboard)** : Interface utilisateur moderne et réactive permettant la visualisation des données sous forme de graphiques en temps réel.
-- **Intelligence Artificielle** : Intégration d'algorithmes d'IA pour analyser les données environnementales et optimiser les prises de décision agricoles.
+- **Intelligence Artificielle** : Intégration de l'**API Google Gemini** pour analyser les données environnementales et générer des recommandations agronomiques pertinentes afin d'optimiser les prises de décision agricoles.
 
 ### Les technologies utilisées
 - **IoT & Firmware** : C/C++ (Environnement Arduino/ESP32), Simulateur Wokwi.
 - **Backend** : Node.js, Express.js, SQLite, JsonWebToken, MQTT (mqtt.js).
 - **Frontend** : React.js, Vite, Tailwind CSS, Recharts, Lucide React.
+- **Intelligence Artificielle** : API Google Gemini.
 
 ---
 
@@ -147,5 +148,8 @@ npm run dev
 ### 3. Lancer la simulation IoT (Firmware)
 Le firmware peut être simulé en utilisant Wokwi (ou flashé sur un vrai ESP32/Arduino). Les fichiers `.chip.c` et `diagram.json` définissent l'environnement matériel virtuel.
 
+> **Lien de la simulation interactive :** [Voir le projet Wokwi (Simulation)](https://wokwi.com/projects/467797481012494337)
+
+---
 > **Lien de la simulation interactive :** [Voir le projet Wokwi (Simulation)](https://wokwi.com/projects/467797481012494337)
 
