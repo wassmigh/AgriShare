@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "author": "Wassmi Gheriani",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -79.8, "left": 185.2, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -4.76, "attrs": {} },
+    { "type": "chip-npksensor", "id": "chip1", "top": 164.22, "left": 187.2, "attrs": {} },
+    { "type": "wokwi-ky-040", "id": "encoder1", "top": -94.3, "left": -231.2, "attrs": {} },
+    { "type": "chip-moisture-sensor", "id": "chip2", "top": 10.62, "left": -235.2, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -210.9,
+      "left": -101.4,
+      "attrs": { "temperature": "22.7", "humidity": "29.5" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -169.6,
+      "left": 106.4,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "stepper1",
+      "top": 147.61,
+      "left": 432.43,
+      "attrs": { "size": "17", "arrow": "blue" }
+    },
+    { "type": "wokwi-a4988", "id": "drv1", "top": 340.8, "left": 331.2, "attrs": {} },
+    { "type": "chip-co2sensor", "id": "chip3", "top": 289.02, "left": 196.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "chip1:VCC", "esp:5V", "red", [ "h-38.4", "v134.4", "h-124.95" ] ],
+    [ "chip1:GND", "esp:GND.2", "black", [ "h-28.8", "v-86.4" ] ],
+    [ "chip1:TX", "esp:16", "green", [ "h-28.8", "v57.6" ] ],
+    [ "esp:17", "chip1:RX", "green", [ "h33.64", "v-28.8" ] ],
+    [ "chip2:A0", "esp:34", "green", [ "h-9.6", "v57.6" ] ],
+    [ "chip2:GND", "esp:CMD", "black", [ "h-28.8", "v192" ] ],
+    [ "chip2:VCC", "esp:5V", "red", [ "h-19.2", "v201.6", "h9.6" ] ],
+    [ "esp:3V3", "bb1:tp.1", "green", [ "h-28.65", "v-48", "h192", "v-57.6" ] ],
+    [ "esp:GND.1", "bb1:tn.24", "black", [ "h-67.05", "v124.8", "h489.6", "v-335.9" ] ],
+    [ "dht1:GND", "bb1:tn.1", "black", [ "v0" ] ],
+    [ "dht1:VCC", "bb1:tp.2", "red", [ "v38.4", "h230.4", "v-48", "h86.4" ] ],
+    [ "ldr1:VCC", "bb1:tp.25", "red", [ "h0" ] ],
+    [ "ldr1:GND", "bb1:tn.23", "black", [ "h0" ] ],
+    [ "dht1:SDA", "esp:4", "green", [ "v316.8", "h192.1", "v-96" ] ],
+    [ "ldr1:AO", "esp:35", "green", [ "h9.6", "v28.1", "h-316.8", "v67.2", "h-9.6", "v48" ] ],
+    [ "esp:5V", "encoder1:VCC", "red", [ "h-95.85", "v-259.2" ] ],
+    [ "encoder1:GND", "bb1:tn.2", "black", [ "h0" ] ],
+    [ "encoder1:CLK", "esp:18", "green", [ "h9.6", "v86.4", "h220.8", "v105.6" ] ],
+    [ "esp:19", "encoder1:DT", "green", [ "h28.8", "v-9.6" ] ],
+    [ "esp:21", "encoder1:SW", "green", [ "h67.2", "v-76.8" ] ],
+    [ "stepper1:A-", "drv1:2B", "green", [ "v0" ] ],
+    [ "stepper1:A+", "drv1:2A", "green", [ "v0" ] ],
+    [ "stepper1:B+", "drv1:1A", "green", [ "v0" ] ],
+    [ "drv1:1B", "stepper1:B-", "green", [ "h0" ] ],
+    [ "drv1:VDD", "esp:5V", "green", [ "h38.55", "v28.88", "h-364.8" ] ],
+    [ "bb1:tn.25", "drv1:GND.1", "green", [ "h-84.8", "v470.22" ] ],
+    [ "drv1:SLEEP", "drv1:RESET", "green", [ "h0" ] ],
+    [ "esp:26", "drv1:STEP", "green", [ "h-38.25", "v288" ] ],
+    [ "drv1:DIR", "esp:27", "green", [ "h-355.2", "v-288" ] ],
+    [ "esp:GND.1", "chip3:GND", "black", [ "h-9.45", "v144" ] ],
+    [ "bb1:tp.3", "chip3:VCC", "green", [ "v-9.3", "h-75.2", "v384" ] ],
+    [ "esp:32", "chip3:A0", "green", [ "h-134.25", "v259.2" ] ]
+  ],
+  "dependencies": {}
+}

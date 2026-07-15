@@ -1,0 +1,45 @@
+{
+  "name": "NPK-Sensor",
+  "author": "Ramya",
+  "pins": 
+  [
+    "VCC",
+    "GND",
+    "RX",
+    "TX",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "controls": 
+  [
+    {
+      "id": "N",
+      "label": "Nitrogen",
+      "type": "range",
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+
+    {
+      "id": "P",
+      "label": "Phosphorus",
+      "type": "range",
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+
+    {
+      "id": "K",
+      "label": "Potassium",
+      "type": "range",
+      "min": 0,
+      "max": 100,
+      "step": 1
+    }
+
+  ]
+}

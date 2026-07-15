@@ -1,0 +1,24 @@
+{
+  "name": "co2sensor",
+  "author": "Anonymous maker",
+  "pins": [
+    "GND",
+    "VCC",
+    "A0",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "controls": [
+    {
+      "id": "CarbonDioxide",
+      "label": "Carbon Dioxide Amount",
+      "type": "range",
+      "min": 0,
+      "max": 800,
+      "step": 10
+    }
+  ]
+}

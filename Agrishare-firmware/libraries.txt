@@ -1,0 +1,15 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+# Automatically added based on includes:
+Adafruit GFX Library
+
+Adafruit SSD1306
+WiFi
+Blynk
+dhtESP32-rmt
+DHT sensor library for ESPx
+DHT sensor library
+PubSubClient
+ArduinoJson
+Adafruit Unified Sensor
