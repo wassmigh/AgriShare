@@ -151,5 +151,5 @@ Le firmware peut être simulé en utilisant Wokwi (ou flashé sur un vrai ESP32/
 > **Lien de la simulation interactive :** [Voir le projet Wokwi (Simulation)](https://wokwi.com/projects/467797481012494337)
 
 ---
-> **Lien de la simulation interactive :** [Voir le projet Wokwi (Simulation)](https://wokwi.com/projects/467797481012494337)
+
 
