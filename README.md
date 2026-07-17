@@ -72,12 +72,12 @@ graph TD
     end
 
     subgraph Backend ["Serveur Backend (Node.js)"]
-        MQTT -- "Subscribe" --> API[Serveur Express]
-        API <--> DB[(Base de données SQLite)]
+        API[Serveur Express] <--> DB[(Base de données SQLite)]
     end
 
     subgraph Frontend ["Application Web (React)"]
-        UI[Tableau de Bord / UI] <--> |"Requêtes HTTP REST"| API
+        UI[Tableau de Bord / UI] <--> |"Requêtes HTTP REST (Auth)"| API
+        MQTT -- "Subscribe (WebSockets)" --> UI
     end
 
     %% Styles
